@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="header-auth">
+    <div class="container">
+      <div class="header-auth__inner">
+        <div class="header-auth__info">
+          <div class="header-auth__info-item">
+            Balance: <span>0</span>
+          </div>
+          <div class="header-auth__info-item">
+            Wallet: <span>50 ₽</span>
+          </div>
+          <div class="header-auth__info-item">
+            <a href="#">Help</a>
+          </div>
+        </div>
+        <div class="header-auth__user">
+          <div class="header-auth__user-wrap-main">
+            <div class="header-auth__user-item more-accounts" btn-user-show>
+              <div class="header-auth__user-wrap">
+                <img class="header-auth__avatar" src="./img/header-auth/avatar.png" alt="">
+              </div>
+            </div>
+            <div class="header-auth__user-item">
+              <div class="header-auth__cirlce-text">E</div>
+            </div>
+            <div class="header-auth__user-item">
+              <div class="header-auth__cirlce-text">12</div>
+            </div>
+            <div class="header-auth__user-item">
+              <button class="header-auth__user-btn btn--add">
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu">
+    <button class="mobile-menu__close">
+      <span></span>
+    </button>
+    <nav class="sidebar__nav sidebar__nav--mobile">
+      <a href="profile.html" class="sidebar__nav-link">My profile</a>
+      <a href="news.html" class="sidebar__nav-link active">News</a>
+      <a href="slots.html" class="sidebar__nav-link">Slots</a>
+      <a href="rating.html" class="sidebar__nav-link">Rating</a>
+    </nav>
+  </div>
+  <div class="mobile-menu__overlay"></div>
+  <div class="mobile-accounts__overlay"></div>
+  <div class="mobile-accounts">
+    <button class="mobile-accounts__close"><img src="./img/icons/close-dark.svg" alt=""></button>
+    <ul class="right-sidebar__list list-team list-team--follow">
+      <li class="list-team__person">
+        <div class="list-team__person-wrap">
+          <div href="#" class="list-team__person-avatar avatar-img">
+            <img src="./img/header-auth/avatar.png" alt="">
+          </div>
+          <div class="list-team__person-info">
+            <div class="list-team__person-header">
+              <a href="#">
+                <h5 class="list-team__person-name">nickname</h5>
+              </a>
+            </div>
+            <div class="list-team__person-text">
+              <img src="./img/icons/arrow-up.svg" alt="">
+              <span>63,83%</span>
+              за месяц
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="list-team__person">
+        <div class="list-team__person-wrap">
+          <a href="#" class="list-team__person-avatar">N</a>
+          <div class="list-team__person-info">
+            <div class="list-team__person-header">
+              <a href="#">
+                <h5 class="list-team__person-name">nickname</h5>
+              </a>
+            </div>
+            <div class="list-team__person-text">
+              <img src="./img/icons/arrow-up.svg" alt="">
+              <span>63,83%</span>
+              за месяц
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="list-team__person">
+        <div class="list-team__person-wrap">
+          <a href="#" class="list-team__person-avatar">N</a>
+          <div class="list-team__person-info">
+            <div class="list-team__person-header">
+              <a href="#">
+                <h5 class="list-team__person-name">nickname</h5>
+              </a>
+            </div>
+            <div class="list-team__person-text">
+              <img src="./img/icons/arrow-up.svg" alt="">
+              <span>63,83%</span>
+              за месяц
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="list-team__person">
+        <div class="list-team__person-wrap">
+          <a href="#" class="list-team__person-avatar">N</a>
+          <div class="list-team__person-info">
+            <div class="list-team__person-header">
+              <a href="#">
+                <h5 class="list-team__person-name">nickname</h5>
+              </a>
+            </div>
+            <div class="list-team__person-text">
+              <img src="./img/icons/arrow-up.svg" alt="">
+              <span>63,83%</span>
+              за месяц
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="list-team__person list-team__person--btn">
+        <button class="btn--add"><span></span></button>
+        <span>Добавить аккаунт</span>
+      </li>
+    </ul>
+  </div>
+  <div class="page">
+    <div class="container">
+      <div class="page__inner">
+        <aside class="sidebar">
+          <div class="sidebar__inner">
+            <div class="sidebar__header">
+              <button class="burger">
+                <span></span>
+              </button>
+              <a href="#" class="logo">
+                <img src="./img/sidebar/logo-text.svg" alt="">
+                <img src="./img/sidebar/logo-img.svg" alt="">
+              </a>
+            </div>
+            <nav class="sidebar__nav">
+              <a href="profile.html" class="sidebar__nav-link">My profile</a>
+              <a href="news.html" class="sidebar__nav-link active">News</a>
+              <a href="slots.html" class="sidebar__nav-link">Slots</a>
+              <a href="rating.html" class="sidebar__nav-link">Rating</a>
+            </nav>
+          </div>
+        </aside>
+        <main class="main">
+          <div class="news">
+            <div class="news__header header-title">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item active"><a href="#">News</a></li>
+              </ul>
+              <button class="sign-up__button header-title__btn btn-small header-title__btn--mobile-off">
+                <span></span>
+              </button>
+              <div class="form__wrap form__wrap--radio form__wrap--mobile-on">
+                <div class="form__group--radio">
+                  <input id="one" type="radio" checked class="form__control--radio" name="users">
+                  <label for="one">
+                    <span></span>
+                  </label>
+                </div>
+                <div class="form__group--radio">
+                  <input id="two" type="radio" class="form__control--radio" name="users">
+                  <label for="two">
+                    <span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="news__content">
+              <div class="news__content-header news-invest">
+                <div class="news-invest__me news-invest__me--comments">
+                  <img src="./img/comments/comments-img.png" alt="">
+                </div>
+                <form class="news-invest__form form">
+                  <div class="news-invest__form-group form__group">
+                    <input type="text" class="form__control form__control--with-file" placeholder="Where to invest?">
+                    <div class="form__group form__group--file">
+                      <input id="file" type="file" class="form__control form__control--file">
+                      <label for="file">
+
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form__wrap form__wrap--radio form__wrap--mobile-off">
+                    <div class="form__group--radio">
+                      <input id="one-one" type="radio" checked class="form__control--radio" name="users">
+                      <label for="one-one">
+                        <span></span>
+                      </label>
+                    </div>
+                    <div class="form__group--radio">
+                      <input id="two-two" type="radio" class="form__control--radio" name="users">
+                      <label for="two-two">
+                        <span></span>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="news__content-content news-list">
+                <div class="news-list__item">
+                  <div class="news-list__item-header">
+                    <div class="news-list__item-nick nick">
+                      <img src="./img/news/nick-avatar.svg" alt="" class="nick__avatar">
+                      <div class="nick__name">Nickname</div>
+                    </div>
+                    <button class="btn-small btn-small--gray" js-btn-more>
+                      <ul class="more-body">
+                        <li class="more-body__item">
+                          Follow
+                        </li>
+                        <li class="more-body__item">
+                          Share link
+                        </li>
+                        <li class="more-body__item">
+                         It is you?
+                        </li>
+                        <li class="more-body__item">
+                         Write a complaint
+                        </li>
+                        <li class="danger more-body__item">
+                         Block account
+                        </li>
+                      </ul>
+                    </button>
+                  </div>
+                  <div class="news-list__item-text w-100">
+                    <p>
+                      <a href="#">#hubulov</a> Футболист «Алании» удалил «инстаграм» после грубого оскорбления теннисистки Касаткиной; Грузинский футболист «Спартака» получил российское гражданство <a href="#">#nikusha.9.23</a>. Пост в инстаграме Роналду стоит 1,6 млн долларов. Криштиану впервые стал 1-м по этому показателю <a href="#">#cristiano</a>. Получивший травму в матче Евро украинский футболист выбыл на полгода <a href="#">#artembesedin</a>.
+                    </p>
+                  </div>
+                  <div class="news-list__item-team team-news swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="team-news__item">
+                          <img src="./img/news/team-news__img-1.png" alt="" class="team-news__item-img">
+                          <div class="team-news__item-value">
+                            4 458<span>,45</span><a href="#"><img src="./img/news/heart.svg" alt=""></a>
+                          </div>
+                          <div class="team-news__item-per">
+                            <span class="icon"></span>
+                            12,48%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="team-news__item">
+                          <img src="./img/news/team-news__img-2.png" alt="" class="team-news__item-img">
+                          <div class="team-news__item-value">
+                            388<span>,24</span><a href="#"><img src="./img/news/heart.svg" alt=""></a>
+                          </div>
+                          <div class="team-news__item-per team-news__item-per--green">
+                            <span class="icon"></span>
+                            239,83%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="team-news__item">
+                          <img src="./img/news/team-news__img-2.png" alt="" class="team-news__item-img">
+                          <div class="team-news__item-value">
+                            4 458<span>,24</span><a href="#"><img src="./img/news/heart.svg" alt=""></a>
+                          </div>
+                          <div class="team-news__item-per team-news__item-per--green">
+                            <span class="icon"></span>
+                            239,83%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="team-news__item">
+                          <img src="./img/news/team-news__img-2.png" alt="" class="team-news__item-img">
+                          <div class="team-news__item-value">
+                            388<span>,24</span><a href="#"><img src="./img/news/heart.svg" alt=""></a>
+                          </div>
+                          <div class="team-news__item-per team-news__item-per--green">
+                            <span class="icon"></span>
+                            239,83%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="team-news__item">
+                          <img src="./img/news/team-news__img-2.png" alt="" class="team-news__item-img">
+                          <div class="team-news__item-value">
+                            388<span>,24</span><a href="#"><img src="./img/news/heart.svg" alt=""></a>
+                          </div>
+                          <div class="team-news__item-per team-news__item-per--green">
+                            <span class="icon"></span>
+                            239,83%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div  class="team-news__item">
+                          <img src="./img/news/team-news__img-2.png" alt="" class="team-news__item-img">
+                          <div class="team-news__item-value">
+                            388<span>,24</span><a href="#"><img src="./img/news/heart.svg" alt=""></a>
+                          </div>
+                          <div class="team-news__item-per team-news__item-per--green">
+                            <span class="icon"></span>
+                            239,83%
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-list__item-time">
+                    2 часа назад
+                  </div>
+                </div>
+                <div class="news-list__item">
+                  <div class="news-list__item-header">
+                    <div class="news-list__item-nick nick">
+                      <img src="./img/news/nick-avatar.svg" alt="" class="nick__avatar">
+                      <div class="nick__name">Nickname</div>
+                    </div>
+                    <button class="btn-small btn-small--gray" js-btn-more>
+                      <ul class="more-body">
+                        <li class="more-body__item">
+                          Follow
+                        </li>
+                        <li class="more-body__item">
+                          Share link
+                        </li>
+                        <li class="more-body__item">
+                         It is you?
+                        </li>
+                        <li class="more-body__item">
+                         Write a complaint
+                        </li>
+                        <li class="danger more-body__item">
+                         Block account
+                        </li>
+                      </ul>
+                    </button>
+                  </div>
+                  <div class="news-list__item-text">
+                    <p>
+                      <a href="#">#hubulov</a> Футболист «Алании» удалил «инстаграм» после грубого оскорбления теннисистки Касаткиной
+                    </p>
+                  </div>
+                  <div class="team-graph__avatar--mobile">
+                    <a href="#"><img src="./img/news/graph-person__img.png" alt="team" class="team-graph__avatar-img"></a>
+                    <h4 class="team-graph__avatar-name"><a href="#">hubulov</a><img src="./img/icons/verification.svg" alt=""></h4>
+                  </div>
+                  <div class="team-graph">
+                    <div class="team-graph__avatar">
+                      <a href="#"><img src="./img/news/graph-person__img.png" alt="team" class="team-graph__avatar-img"></a>
+                      <div class="team-graph__avatar-info">
+                        <h4 class="team-graph__avatar-name"><a href="#">hubulov</a><img src="./img/icons/verification.svg" alt=""></h4>
+                        <div class="team-graph__avatar-pos">Футбол</div>
+                      </div>
+                    </div>
+                    <div class="team-graph__graph">
+                      <div class="chartAreaWrapper--small" style="width: 300pt;">
+                        <!-- <div class="chartAreaWrapper--small2"> -->
+                          <canvas class="small-chart" id="small-chart" style="display: block; width: 500px; height: 60px;"></canvas>
+                        <!-- </div> -->
+                      </div>
+                    </div>
+                    <div class="team-graph__numbers">
+                      <div class="team-graph__value">4 458<span>,34</span><a href="#"><img src="./img/news/heart-bold.svg" alt="heart"></a></div>
+                      <div class="team-graph__per">
+                        <span class="icon"></span>
+                          12,48%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-list__item-time">
+                    2 часа назад
+                  </div>
+                </div>
+                <div class="news-list__item">
+                  <div class="news-list__item-header">
+                    <div class="news-list__item-nick nick">
+                      <img src="./img/news/nick-avatar.svg" alt="" class="nick__avatar">
+                      <div class="nick__name">Nickname</div>
+                    </div>
+                    <button class="btn-small btn-small--gray" js-btn-more>
+                      <ul class="more-body">
+                        <li class="more-body__item">
+                          Follow
+                        </li>
+                        <li class="more-body__item">
+                          Share link
+                        </li>
+                        <li class="more-body__item">
+                         It is you?
+                        </li>
+                        <li class="more-body__item">
+                         Write a complaint
+                        </li>
+                        <li class="danger more-body__item">
+                         Block account
+                        </li>
+                      </ul>
+                    </button>
+                  </div>
+                  <div class="news-list__item-text news-list__item-text--mw-none">
+                    <p>
+                      Футболист «Алании» удалил «инстаграм» после грубого оскорбления теннисистки Касаткиной
+                    </p>
+                  </div>
+                  <div class="news-list__item-time">
+                    2 часа назад
+                  </div>
+                </div>
+                <div class="news-list__item">
+                  <div class="news-list__item-header">
+                    <div class="news-list__item-nick nick">
+                      <img src="./img/news/nick-avatar.svg" alt="" class="nick__avatar">
+                      <div class="nick__name">Nickname</div>
+                    </div>
+                    <button class="btn-small btn-small--gray" js-btn-more>
+                      <ul class="more-body">
+                        <li class="more-body__item">
+                          Follow
+                        </li>
+                        <li class="more-body__item">
+                          Share link
+                        </li>
+                        <li class="more-body__item">
+                         It is you?
+                        </li>
+                        <li class="more-body__item">
+                         Write a complaint
+                        </li>
+                        <li class="danger more-body__item">
+                         Block account
+                        </li>
+                      </ul>
+                    </button>
+                  </div>
+                  <div class="news-list__item-text news-list__item-text--mw-none">
+                    <p>
+                      Футболист «Алании» удалил «инстаграм» после грубого оскорбления теннисистки Касаткиной
+                    </p>
+                  </div>
+                  <div class="news-list__item-time">
+                    2 часа назад
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <aside class="right-sidebar">
+          <div class="header-title">
+            <h3 class="header-title__title">Top 10 today</h3>
+            <button class="header-title__btn btn-small header-title__btn--mobile-on">
+              <span></span>
+            </button>
+            <button class="header-title__btn btn-small header-title__btn--right-sidebar">
+              <span></span>
+            </button>
+          </div>
+          <form class="right-sidebar__search right-sidebar__search--mt-0">
+            <input type="search" class="form__control form__control--search" placeholder="Search">
+            <button class="search btn-small" type="submit">
+              <span></span>
+            </button>
+          </form>
+          <ul class="right-sidebar__list list-team">
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay modal-overlay--sign-in">
+    <div class="modal" id="modal-sign_in">
+      <button class="modal__close"><img src="./img/icons/close-dark.svg" alt=""></button>
+      <div class="modal__content">
+        <img src="./img/icons/popup-hi.svg" alt="" class="modal__hi">
+        <div class="modal__title">Sign in</div>
+        <div class="modal__text">Enter your email and password to use all Tipsner functions.</div>
+        <form action="" class="form">
+          <div class="form__group">
+            <input type="email" class="form__control" placeholder="e-mail">
+          </div>
+          <div class="form__group form__group--password">
+            <input type="password" class="form__control form__control--pass" placeholder="password">
+            <button class="password-show" js-btn-password>
+              <span>
+              </span>
+            </button>
+          </div>
+          <a class="modal__forgot" href="#">Forgot password?</a>
+          <button class="form__btn" type="submit">Sign in</button>
+          <div class="form__footer">
+            <div class="form__social">
+              <a href="#" class="social-link">Vkontakte</a>
+              <a href="#" class="social-link">Facebook</a>
+              <a href="#" class="social-link">Instagram</a>
+            </div>
+            <div class="form__text">
+              I don't have an account.<a href="/profile.html">Sign up</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__left">
+      Copyright. Tipsner 2021. All rights reserved! Any use of materials is permitted only with the consent of the publisher.
+    </div>
+    <div class="footer__right">
+      <div class="footer__right-item">
+        Terms of Use
+      </div>
+      <div class="footer__right-item">
+        <a href="tel:84956485270" class="footer__phone">
+          <img src="./img/footer/phone.svg" alt="phone">
+            8 495 648 52 70
+        </a>
+        <a href="mailto:help@tipsner.com" class="footer__phone">
+          <img src="./img/footer/communications.svg" alt="email">
+            help@tipsner.com
+        </a>
+      </div>
+      <div class="footer__right-item">
+        <div class="footer__social">
+          <a href="#">
+            <img src="./img/footer/instagram.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./img/footer/linkedin.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./img/footer/telegram.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./img/footer/youtube.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://unpkg.com/swiper@6/swiper-bundle.min.js"></script>
+  <script src="js/vendors.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>

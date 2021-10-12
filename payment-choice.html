@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="header-auth">
+  <div class="container">
+    <div class="header-auth__inner">
+      <div class="header-auth__info">
+        <div class="header-auth__info-item">
+          Balance: <span>0</span>
+        </div>
+        <div class="header-auth__info-item">
+          Wallet: <span>50 ₽</span>
+        </div>
+        <div class="header-auth__info-item">
+          <a href="#">Help</a>
+        </div>
+      </div>
+      <div class="header-auth__user">
+        <div class="header-auth__user-wrap-main">
+          <div class="header-auth__user-item" btn-user-show>
+            <div class="header-auth__user-wrap">
+              <img class="header-auth__avatar" src="./img/header-auth/avatar.png" alt="">
+            </div>
+          </div>
+          <div class="header-auth__user-item">
+            <div class="header-auth__cirlce-text">E</div>
+          </div>
+          <div class="header-auth__user-item">
+            <div class="header-auth__cirlce-text">12</div>
+          </div>
+          <div class="header-auth__user-item">
+            <button class="header-auth__user-btn btn--add">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="mobile-menu">
+    <button class="mobile-menu__close">
+      <span></span>
+    </button>
+    <nav class="sidebar__nav sidebar__nav--mobile">
+      <a href="profile.html" class="sidebar__nav-link">My profile</a>
+      <a href="news.html" class="sidebar__nav-link">News</a>
+      <a href="slots.html" class="sidebar__nav-link">Slots</a>
+      <a href="rating.html" class="sidebar__nav-link">Rating</a>
+    </nav>
+  </div>
+  <div class="mobile-menu__overlay"></div>
+  <div class="page">
+    <div class="container">
+      <div class="page__inner">
+        <aside class="sidebar">
+          <div class="sidebar__inner">
+            <div class="sidebar__header">
+              <button class="burger">
+                <span></span>
+              </button>
+              <a href="#" class="logo">
+                <img src="./img/sidebar/logo-text.svg" alt="">
+                <img src="./img/sidebar/logo-img.svg" alt="">
+              </a>
+            </div>
+            <nav class="sidebar__nav">
+              <a href="profile.html" class="sidebar__nav-link">My profile</a>
+              <a href="news.html" class="sidebar__nav-link">News</a>
+              <a href="slots.html" class="sidebar__nav-link">Slots</a>
+              <a href="rating.html" class="sidebar__nav-link">Rating</a>
+            </nav>
+          </div>
+        </aside>
+        <main class="main">
+          <div class="payment-choice">
+            <div class="payment-choice__header header-title">
+              <ul class="breadcrumb breadcrumb--not-divider">
+                <li class="breadcrumb-item active">Add a payment method</li>
+              </ul>
+              <button class="sign-up__button header-title__btn btn-small header-title__btn--mobile-off">
+                <span></span>
+              </button>
+            </div>
+            <div class="payment-choice__content">
+              <form class="payment-choice__form form">
+                <div class="form__content">
+                  <div class="form__content-wrap">
+                    <div class="form__item" js-form-card>
+                      <div class="form__item-scroll">
+                        <div class="form__item-wrap">
+                          <div class="form__group form__group--radio form__group--checkbox">
+                            <input id="credit" type="radio"
+                              class="form__control form__control--radio form__control--checkbox" name="payment"
+                              value="credit-debit" js-radio-payment>
+                            <label class="checkbox radio" for="credit">Credit or debit card</label>
+                          </div>
+                          <div class="form__cards">
+                            <div class="form__cards-card">
+                              <img src="./img/payment-choice/visa.svg" alt="card">
+                            </div>
+                            <div class="form__cards-card">
+                              <img src="./img/payment-choice/mastercard.svg" alt="card">
+                            </div>
+                            <div class="form__cards-card">
+                              <img src="./img/payment-choice/amex.svg" alt="card">
+                            </div>
+                            <div class="form__cards-card">
+                              <img src="./img/payment-choice/discaver.svg" alt="card">
+                            </div>
+                          </div>
+                          <div class="form__item-body body-item">
+                            <div class="form__group form__group--valid">
+                              <input type="text" class="body-item__input form__control required _card"
+                                placeholder="0000 0000 0000 0000" js-credit-card maxlength="19">
+                              <span class="icon-valid"></span>
+                            </div>
+                            <div class="form__wrap">
+                              <label for="mm">Valid thru:</label>
+                              <div class="form__group form__group form__group--my-0">
+                                <input id="mm" type="text" class="form__control form__control--minni" placeholder="MM"
+                                  js-valid-input maxlength="2">
+                              </div>
+                              <div class="form__group form__group--mt-0">
+                                <input type="text" class="form__control form__control--minni" placeholder="YY"
+                                  js-valid-input maxlength="2">
+                              </div>
+                            </div>
+                            <div class="form__text form__text--locked">
+                              Your payment information is protected <a href="#">More details</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form__item-body form__item-body--right">
+                          <div class="form__group">
+                            <label for="cvc">CVC:</label>
+                            <input type="text" class="form__control form__control--minni" placeholder="000"
+                              js-valid-input maxlength="3">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__item" js-form-card>
+                      <div class="form__item-scroll">
+                        <div class="form__item-wrap form__item-wrap--w-100">
+                          <div class="form__group form__group--radio form__group--checkbox">
+                            <input id="electron" type="radio"
+                              class="form__control form__control--radio form__control--checkbox" name="payment"
+                              value="electron" js-radio-payment>
+                            <label class="checkbox radio" for="electron">Electronic money</label>
+                          </div>
+                          <div class="form__cards">
+                            <div class="form__cards-card">
+                              <img src="./img/payment-choice/electron_1.svg" alt="card">
+                            </div>
+                            <div class="form__cards-card">
+                              <img src="./img/payment-choice/electron_2.svg" alt="card">
+                            </div>
+                            <div class="form__cards-card">
+                              <img src="./img/payment-choice/electron_3.svg" alt="card">
+                            </div>
+                            <div class="form__cards-card">
+                              <img src="./img/payment-choice/electron_4.svg" alt="card">
+                            </div>
+                          </div>
+                          <div class="form__item-body body-item">
+                            <div class="form__group form__group--valid">
+                              <input type="text" class="body-item__input form__control required _card"
+                                placeholder="0000 0000 0000 0000" maxlength="19" js-credit-card>
+                              <span class="icon-valid"></span>
+                            </div>
+                            <div class="form__wrap form__wrap--electron">
+                              <div class="form__group form__group--valid form__group--tel-check">
+                                <label for="tel">TEL:</label>
+                                <input id="tel" class="form__control form__control--medium masked required _phone"
+                                  data-mask="+7 (###) ###-##-##" type="tel" placeholder="+7 (999) 999-99-99">
+                                <span class="icon-valid"></span>
+                              </div>
+                              <div class="form__group form__group--valid form__group--tel-check">
+                                <label for="code">CODE:</label>
+                                <input id="code" type="text"
+                                  class="form__control required _code form__control--medium-minni" js-valid-input
+                                  placeholder="000000" maxlength="6">
+                                <span class="icon-valid"></span>
+                              </div>
+                              <button class="btn">Check</button>
+                            </div>
+                            <div class="form__text form__text--locked">
+                              Your payment information is protected <a href="#">More details</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__item" js-form-card>
+                      <div class="form__item-scroll">
+                        <div class="form__item-wrap form__item-wrap--w-100">
+                          <div class="form__group form__group--radio form__group--checkbox">
+                            <input id="mobile" type="radio"
+                              class="form__control form__control--radio form__control--checkbox" name="payment"
+                              value="mobile" js-radio-payment>
+                            <label class="checkbox radio" for="mobile">Mobile phone</label>
+                          </div>
+                          <div class="form__cards">
+                            <div class="form__cards-card">
+                              <img src="./img/payment-choice/mts.svg" alt="card">
+                            </div>
+                            <div class="form__cards-card">
+                              <img src="./img/payment-choice/megafon.svg" alt="card">
+                            </div>
+                            <div class="form__cards-card">
+                              <img src="./img/payment-choice/beeline.svg" alt="card">
+                            </div>
+                          </div>
+                          <div class="form__item-body body-item">
+                            <div class="form__wrap form__wrap--electron">
+                              <div class="form__group form__group--valid form__group--tel-check">
+                                <label for="tel">TEL:</label>
+                                <input id="tel" type="tel"
+                                  class="form__control required _phone form__control--medium masked"
+                                  data-mask="+7 (###) ###-##-##" placeholder="+7 (999) 999-99-99">
+                                <span class="icon-valid"></span>
+                              </div>
+                              <div class="form__group form__group--valid form__group--tel-check">
+                                <label for="code">CODE:</label>
+                                <input id="code" type="text"
+                                  class="form__control required _code form__control--medium-minni" placeholder="000000"
+                                  js-valid-input maxlength="6">
+                                <span class="icon-valid"></span>
+                              </div>
+                              <button class="btn">Check</button>
+                            </div>
+                            <div class="form__text form__text--locked">
+                              Your payment information is protected <a href="#">More details</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="form__btn" disabled>Next</button>
+                <div class="form__text">If you have any problems. <a href="#">Contact support.</a></div>
+              </form>
+            </div>
+          </div>
+        </main>
+        <aside class="right-sidebar">
+          <div class="header-title">
+            <h3 class="header-title__title">Notifications</h3>
+            <button class="header-title__btn btn-small header-title__btn--mobile-on">
+              <span></span>
+            </button>
+            <button class="header-title__btn btn-small header-title__btn--right-sidebar">
+              <span></span>
+            </button>
+          </div>
+          <form class="right-sidebar__search right-sidebar__search--mt-0">
+            <input type="search" class="form__control form__control--search" placeholder="Search">
+            <button class="search btn-small" type="submit">
+              <span></span>
+            </button>
+          </form>
+          <ul class="right-sidebar__list list-team">
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/avatar.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">100 tips</h5>
+                    </a>
+                  </div>
+                  <div class="list-team__person-text">
+                    You are promoting your idol!
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/heart.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">+50 ₽</h5>
+                    </a>
+                  </div>
+                  <div class="list-team__person-text">
+                    Thank you for registration!
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/heart.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">+50 ₽</h5>
+                    </a>
+                  </div>
+                  <div class="list-team__person-text">
+                    Thank you for registration!
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__left">
+      Copyright. Tipsner 2021. All rights reserved! Any use of materials is permitted only with the consent of the publisher.
+    </div>
+    <div class="footer__right">
+      <div class="footer__right-item">
+        Terms of Use
+      </div>
+      <div class="footer__right-item">
+        <a href="tel:84956485270" class="footer__phone">
+          <img src="./img/footer/phone.svg" alt="phone">
+            8 495 648 52 70
+        </a>
+        <a href="mailto:help@tipsner.com" class="footer__phone">
+          <img src="./img/footer/communications.svg" alt="email">
+            help@tipsner.com
+        </a>
+      </div>
+      <div class="footer__right-item">
+        <div class="footer__social">
+          <a href="#">
+            <img src="./img/footer/instagram.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./img/footer/linkedin.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./img/footer/telegram.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./img/footer/youtube.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://unpkg.com/swiper@6/swiper-bundle.min.js"></script>
+  <script src="js/vendors.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

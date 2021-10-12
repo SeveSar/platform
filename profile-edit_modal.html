@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="header-auth">
+  <div class="container">
+    <div class="header-auth__inner">
+      <div class="header-auth__info">
+        <div class="header-auth__info-item">
+          Balance: <span>0</span>
+        </div>
+        <div class="header-auth__info-item">
+          Wallet: <span>50 ₽</span>
+        </div>
+        <div class="header-auth__info-item">
+          <a href="#">Help</a>
+        </div>
+      </div>
+      <div class="header-auth__user">
+        <div class="header-auth__user-wrap-main">
+          <div class="header-auth__user-item" btn-user-show>
+            <div class="header-auth__user-wrap">
+              <img class="header-auth__avatar" src="./img/header-auth/avatar.png" alt="">
+            </div>
+          </div>
+          <div class="header-auth__user-item">
+            <div class="header-auth__cirlce-text">E</div>
+          </div>
+          <div class="header-auth__user-item">
+            <div class="header-auth__cirlce-text">12</div>
+          </div>
+          <div class="header-auth__user-item">
+            <button class="header-auth__user-btn btn--add">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="mobile-menu">
+    <button class="mobile-menu__close">
+      <span></span>
+    </button>
+    <nav class="sidebar__nav sidebar__nav--mobile">
+      <a href="profile.html" class="sidebar__nav-link">My profile</a>
+      <a href="news.html" class="sidebar__nav-link active">News</a>
+      <a href="slots.html" class="sidebar__nav-link">Slots</a>
+      <a href="rating.html" class="sidebar__nav-link">Rating</a>
+    </nav>
+  </div>
+  <div class="mobile-menu__overlay"></div>
+  <div class="page">
+    <div class="container">
+      <div class="page__inner">
+        <aside class="sidebar">
+          <div class="sidebar__inner">
+            <div class="sidebar__header">
+              <button class="burger">
+                <span></span>
+              </button>
+              <a href="#" class="logo">
+                <img src="./img/sidebar/logo-text.svg" alt="">
+                <img src="./img/sidebar/logo-img.svg" alt="">
+              </a>
+            </div>
+            <nav class="sidebar__nav">
+              <a href="profile.html" class="sidebar__nav-link">My profile</a>
+              <a href="news.html" class="sidebar__nav-link">News</a>
+              <a href="slots.html" class="sidebar__nav-link">Slots</a>
+              <a href="rating.html" class="sidebar__nav-link">Rating</a>
+            </nav>
+          </div>
+        </aside>
+        <main class="main">
+          <div class="profile-edit">
+            <div class="profile-edit__header header-title">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item active">Edit</li>
+              </ul>
+              <button class="profile-edit__button header-title__btn btn-small header-title__btn--mobile-off">
+                <span></span>
+              </button>
+            </div>
+            <div class="profile-edit__content">
+              <div class="profile-edit__user-info">
+                <div class="profile-edit__user-avatar">
+                  <img src="./img/profile-edit/avatar-big.png" alt="">
+                  <div class="form__group form__group--file form__group--file-avatar">
+                    <input id="file" type="file" class="form__control form__control--file">
+                    <label for="file">
+                    </label>
+                  </div>
+                </div>
+                <div class="profile-edit__user-nick">Nickname</div>
+                <div class="profile-edit__user-email">mail@gmail.com</div>
+              </div>
+              <form action="" class="block-change__form form">
+                <div class="profile-edit__change-block block-change">
+                  <div class="block-change__header">
+                    <h4 class="block-change__caption">Add social media</h4>
+                    <div class="block-change__text">Add social networks and get 50 ₽ to your account.</div>
+                  </div>
+                  <div class="form-wrap">
+                    <div class="form__group form__group--needed-valid">
+                      <label for="facebook">Facebook</label>
+                      <input id="facebook" type="text" class="form__control form__control--needed-valid" placeholder="https://www.facebook.com/">
+                      <span class="icon-valid"></span>
+                    </div>
+                    <div class="form__group form__group--needed-valid">
+                      <label for="vkontakte">Vkontakte</label>
+                      <input id="vkontakte" type="email" class="form__control form__control--needed-valid" placeholder="https://www.vkontakte.com/">
+                      <span class="icon-valid"></span>
+                    </div>
+                    <div class="form__group form__group--needed-valid">
+                      <label for="instagram">Instagram</label>
+                      <input id="instagram" type="text" class="form__control form__control--needed-valid"
+                        placeholder="https://www.instagram.com/">
+                      <span class="icon-valid"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-edit__change-block block-change">
+                  <div class="block-change__header">
+                    <h4 class="block-change__caption">Change password</h4>
+                    <div class="block-change__text">If you want to change your password, enter your old password.</div>
+                  </div>
+                  <div class="form-wrap">
+                    <div class="form__group form__group--password">
+                      <label for="old-pass">Old password</label>
+                      <input id="old-pass" type="password" class="form__control form__control--pass" placeholder="password">
+                      <button class="password-show" js-btn-password>
+                        <span>
+
+                        </span>
+                    </div>
+                    <div class="form__group form__group--password">
+                      <label for="new-pass">New password</label>
+                      <input id="new-pass" type="password" class="form__control form__control--pass" placeholder="password">
+                      <button class="password-show" js-btn-password>
+                        <span>
+
+                        </span>
+                    </div>
+                    <div class="form__group form__group--password">
+                      <label for="repeat-pass">Repeat password</label>
+                      <input id="repeat-pass" type="text" class="form__control form__control--pass" placeholder="password">
+                      <button class="password-show" js-btn-password>
+                        <span>
+
+                        </span>
+                    </div>
+                  </div>
+                </div>
+                <button class="form__btn" type="submit">Save</button>
+              </form>
+            </div>
+          </div>
+        </main>
+        <aside class="right-sidebar">
+          <div class="header-title">
+            <h3 class="header-title__title">Notifications</h3>
+            <button class="header-title__btn btn-small header-title__btn--mobile-on">
+              <span></span>
+            </button>
+            <button class="header-title__btn btn-small header-title__btn--right-sidebar">
+              <span></span>
+            </button>
+          </div>
+          <form class="right-sidebar__search right-sidebar__search--mt-0">
+            <input type="search" class="form__control form__control--search" placeholder="Search">
+            <button class="search btn-small" type="submit">
+              <span></span>
+            </button>
+          </form>
+          <ul class="right-sidebar__list list-team">
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/heart.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">+50 ₽</h5>
+                    </a>
+                  </div>
+                  <div class="list-team__person-text">
+                    Thank you for registration!
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay active">
+    <div class="modal active" id="create-slot">
+      <button class="modal__close"><img src="./img/icons/close-dark.svg" alt=""></button>
+      <div class="modal__content">
+        <img src="./img/icons/popup-create_slot.svg" alt="" class="modal__hi">
+        <div class="modal__title">Create your slot</div>
+        <div class="modal__text">Fill in the information and link social networks to get 50 rubles in your wallet.</div>
+        <button class="form__btn btn--big-text" type="submit">ok</button>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__left">
+      Copyright. Tipsner 2021. All rights reserved! Any use of materials is permitted only with the consent of the publisher.
+    </div>
+    <div class="footer__right">
+      <div class="footer__right-item">
+        Terms of Use
+      </div>
+      <div class="footer__right-item">
+        <a href="tel:84956485270" class="footer__phone">
+          <img src="./img/footer/phone.svg" alt="phone">
+            8 495 648 52 70
+        </a>
+        <a href="mailto:help@tipsner.com" class="footer__phone">
+          <img src="./img/footer/communications.svg" alt="email">
+            help@tipsner.com
+        </a>
+      </div>
+      <div class="footer__right-item">
+        <div class="footer__social">
+          <a href="#">
+            <img src="./img/footer/instagram.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./img/footer/linkedin.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./img/footer/telegram.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./img/footer/youtube.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://unpkg.com/swiper@6/swiper-bundle.min.js"></script>
+  <script src="js/vendors.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

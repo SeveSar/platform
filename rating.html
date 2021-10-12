@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="sign-in-fixed active">
+  <div class="sign-in-fixed__content">
+    Register to create your own slot, support your idol and get bonuses
+      <button class="btn" js-sign-btn>Sign in</button>
+  </div>
+  <button class="sign-in-fixed__close">
+    <img src="./img/icons/close.svg" alt="close">
+  </button>
+</div>
+
+  <div class="mobile-menu">
+    <button class="mobile-menu__close">
+      <span></span>
+    </button>
+    <nav class="sidebar__nav sidebar__nav--mobile">
+      <a href="profile.html" class="sidebar__nav-link">My profile</a>
+      <a href="news.html" class="sidebar__nav-link">News</a>
+      <a href="slots.html" class="sidebar__nav-link">Slots</a>
+      <a href="rating.html" class="sidebar__nav-link active">Rating</a>
+    </nav>
+  </div>
+  <div class="mobile-menu__overlay"></div>
+  <div class="page">
+    <div class="container">
+      <div class="page__inner">
+        <aside class="sidebar">
+          <div class="sidebar__inner">
+            <div class="sidebar__header">
+              <button class="burger">
+                <span></span>
+              </button>
+              <a href="#" class="logo">
+                <img src="./img/sidebar/logo-text.svg" alt="">
+                <img src="./img/sidebar/logo-img.svg" alt="">
+              </a>
+            </div>
+            <nav class="sidebar__nav">
+              <a href="profile.html" class="sidebar__nav-link">My profile</a>
+              <a href="news.html" class="sidebar__nav-link">News</a>
+              <a href="slots.html" class="sidebar__nav-link">Slots</a>
+              <a href="rating.html" class="sidebar__nav-link active">Rating</a>
+            </nav>
+          </div>
+        </aside>
+        <main class="main">
+          <div class="rating">
+            <div class="rating__header header-title">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item active">Rating</li>
+              </ul>
+              <button class="sign-up__button header-title__btn btn-small header-title__btn--mobile-off">
+                <span></span>
+              </button>
+              <div class="form__wrap form__wrap--radio form__wrap--mobile-on">
+                <div class="form__group--radio">
+                  <input id="one" type="radio" checked class="form__control--radio" name="users">
+                  <label for="one">
+                    <span></span>
+                  </label>
+                </div>
+                <div class="form__group--radio">
+                  <input id="two" type="radio" class="form__control--radio" name="users">
+                  <label for="two">
+                    <span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="rating__content">
+              <div class="slots__choice slots-choice slots-choice--nowrap">
+                <div class="slots-choice__left">
+                  <div class="form__group form__group--select">
+                    <div class="select" data-select="1">
+                      <div class="select__header">
+                        <div class="select__current" data-current="popular">Popular</div>
+                        <img class="select__icon" src="./img/slots/select-arrow.svg" alt="arrow">
+                      </div>
+                      <div class="select__body">
+                        <div class="select__item" data-value="popular">Popular</div>
+                        <div class="select__item" data-value="favorite">Favorite</div>
+                        <div class="select__item" data-value="new">New</div>
+                        <div class="select__item" data-value="lieader-up">Лидеры роста</div>
+                        <div class="select__item" data-value="lidear-down">Лидеры падения</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__group form__group--select">
+                    <div class="select disabled" data-select="2">
+                      <div class="select__header disabled">
+                        <div class="select__current">Country</div>
+                        <img class="select__icon" src="./img/icons/arrow-disabled.svg" alt="arrow">
+                      </div>
+                      <div class="select__body">
+                        <div class="select__item" data-value="example">example</div>
+                        <div class="select__item" data-value="example">example</div>
+                        <div class="select__item" data-value="example">example</div>
+                        <div class="select__item" data-value="example">example</div>
+                        <div class="select__item" data-value="example">example</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slots-choice__right">
+                  <div class="form__wrap form__wrap--radio form__wrap--mobile-off">
+                    <div class="form__group--radio">
+                      <input id="view-1" type="radio" checked class="form__control--radio"
+                        name="view">
+                      <label for="view-1">
+                        <span></span>
+                      </label>
+                    </div>
+                    <div class="form__group--radio">
+                      <input id="view-2" type="radio"
+                        class="form__control--radio" name="view">
+                      <label for="view-2">
+                        <span></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rating__list list-rating list-rating--mt-less">
+                <div class="list-rating__item">
+                  <div class="list-rating__wrap">
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__avatar">
+                        <img src="./img/rating/rating-img.png" alt="avatar" class="list-rating__avatar-img">
+                        <div class="list-rating__avatar-info">
+                          <h5 class="list-rating__avatar-title">nickname</h5>
+                          <div class="list-rating__avatar-pos list-rating__text">tipsner</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-value">15 <img src="./img/rating/check.svg" alt="check"></div>
+                      <div class="list-rating__item-text list-rating__text">per month</div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-value">49 458<span>,34</span> <img src="./img/rating/heart-bold.svg"
+                          alt="check"></div>
+                      <div class="list-rating__item-text list-rating__text">portfolio</div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-wrap">
+                        <div class="list-rating__item-value">+ 57 289<span>,75 ₽</span></div>
+                        <div class="list-rating__item-text list-rating__text list-rating__text--green"><img
+                            src="./img/icons/arrow-up-stonks.svg" alt="arrow-up">239,83%</div>
+                      </div>
+                      <div class="list-rating__item-actions">
+                        <button class="btn btn--border">Chat</button>
+                        <button class="btn">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-rating__item-actions list-rating__item-actions--mobile">
+                    <button class="btn btn--border">Chat</button>
+                    <button class="btn">Follow</button>
+                  </div>
+                </div>
+                <div class="list-rating__item">
+                  <div class="list-rating__wrap">
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__avatar">
+                        <img src="./img/rating/rating-img.png" alt="avatar" class="list-rating__avatar-img">
+                        <div class="list-rating__avatar-info">
+                          <h5 class="list-rating__avatar-title">nickname</h5>
+                          <div class="list-rating__avatar-pos list-rating__text">tipsner</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-value">15 <img src="./img/rating/check.svg" alt="check"></div>
+                      <div class="list-rating__item-text list-rating__text">per month</div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-value">49 458<span>,34</span> <img src="./img/rating/heart-bold.svg"
+                          alt="check"></div>
+                      <div class="list-rating__item-text list-rating__text">portfolio</div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-wrap">
+                        <div class="list-rating__item-value">+ 57 289<span>,75 ₽</span></div>
+                        <div class="list-rating__item-text list-rating__text list-rating__text--green"><img
+                            src="./img/icons/arrow-up-stonks.svg" alt="arrow-up">239,83%</div>
+                      </div>
+                      <div class="list-rating__item-actions">
+                        <button class="btn btn--border">Chat</button>
+                        <button class="btn">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-rating__item-actions list-rating__item-actions--mobile">
+                    <button class="btn btn--border">Chat</button>
+                    <button class="btn">Follow</button>
+                  </div>
+                </div>
+                <div class="list-rating__item">
+                  <div class="list-rating__wrap">
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__avatar">
+                        <img src="./img/rating/rating-img.png" alt="avatar" class="list-rating__avatar-img">
+                        <div class="list-rating__avatar-info">
+                          <h5 class="list-rating__avatar-title">nickname</h5>
+                          <div class="list-rating__avatar-pos list-rating__text">tipsner</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-value">15 <img src="./img/rating/check.svg" alt="check"></div>
+                      <div class="list-rating__item-text list-rating__text">per month</div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-value">49 458<span>,34</span> <img src="./img/rating/heart-bold.svg"
+                          alt="check"></div>
+                      <div class="list-rating__item-text list-rating__text">portfolio</div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-wrap">
+                        <div class="list-rating__item-value">+ 57 289<span>,75 ₽</span></div>
+                        <div class="list-rating__item-text list-rating__text list-rating__text--green"><img
+                            src="./img/icons/arrow-up-stonks.svg" alt="arrow-up">239,83%</div>
+                      </div>
+                      <div class="list-rating__item-actions">
+                        <button class="btn btn--border">Chat</button>
+                        <button class="btn">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-rating__item-actions list-rating__item-actions--mobile">
+                    <button class="btn btn--border">Chat</button>
+                    <button class="btn">Follow</button>
+                  </div>
+                </div>
+                <div class="list-rating__item">
+                  <div class="list-rating__wrap">
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__avatar">
+                        <img src="./img/rating/rating-img.png" alt="avatar" class="list-rating__avatar-img">
+                        <div class="list-rating__avatar-info">
+                          <h5 class="list-rating__avatar-title">nickname</h5>
+                          <div class="list-rating__avatar-pos list-rating__text">tipsner</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-value">15 <img src="./img/rating/check.svg" alt="check"></div>
+                      <div class="list-rating__item-text list-rating__text">per month</div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-value">49 458<span>,34</span> <img src="./img/rating/heart-bold.svg"
+                          alt="check"></div>
+                      <div class="list-rating__item-text list-rating__text">portfolio</div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-wrap">
+                        <div class="list-rating__item-value">+ 57 289<span>,75 ₽</span></div>
+                        <div class="list-rating__item-text list-rating__text list-rating__text--green"><img
+                            src="./img/icons/arrow-up-stonks.svg" alt="arrow-up">239,83%</div>
+                      </div>
+                      <div class="list-rating__item-actions">
+                        <button class="btn btn--border">Chat</button>
+                        <button class="btn">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-rating__item-actions list-rating__item-actions--mobile">
+                    <button class="btn btn--border">Chat</button>
+                    <button class="btn">Follow</button>
+                  </div>
+                </div>
+                <div class="list-rating__item">
+                  <div class="list-rating__wrap">
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__avatar">
+                        <img src="./img/rating/rating-img.png" alt="avatar" class="list-rating__avatar-img">
+                        <div class="list-rating__avatar-info">
+                          <h5 class="list-rating__avatar-title">nickname</h5>
+                          <div class="list-rating__avatar-pos list-rating__text">tipsner</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-value">15 <img src="./img/rating/check.svg" alt="check"></div>
+                      <div class="list-rating__item-text list-rating__text">per month</div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-value">49 458<span>,34</span> <img src="./img/rating/heart-bold.svg"
+                          alt="check"></div>
+                      <div class="list-rating__item-text list-rating__text">portfolio</div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-wrap">
+                        <div class="list-rating__item-value">+ 57 289<span>,75 ₽</span></div>
+                        <div class="list-rating__item-text list-rating__text list-rating__text--green"><img
+                            src="./img/icons/arrow-up-stonks.svg" alt="arrow-up">239,83%</div>
+                      </div>
+                      <div class="list-rating__item-actions">
+                        <button class="btn btn--border">Chat</button>
+                        <button class="btn">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-rating__item-actions list-rating__item-actions--mobile">
+                    <button class="btn btn--border">Chat</button>
+                    <button class="btn">Follow</button>
+                  </div>
+                </div>
+                <div class="list-rating__item">
+                  <div class="list-rating__wrap">
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__avatar">
+                        <img src="./img/rating/rating-img.png" alt="avatar" class="list-rating__avatar-img">
+                        <div class="list-rating__avatar-info">
+                          <h5 class="list-rating__avatar-title">nickname</h5>
+                          <div class="list-rating__avatar-pos list-rating__text">tipsner</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-value">15 <img src="./img/rating/check.svg" alt="check"></div>
+                      <div class="list-rating__item-text list-rating__text">per month</div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-value">49 458<span>,34</span> <img src="./img/rating/heart-bold.svg"
+                          alt="check"></div>
+                      <div class="list-rating__item-text list-rating__text">portfolio</div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-wrap">
+                        <div class="list-rating__item-value">+ 57 289<span>,75 ₽</span></div>
+                        <div class="list-rating__item-text list-rating__text list-rating__text--green"><img
+                            src="./img/icons/arrow-up-stonks.svg" alt="arrow-up">239,83%</div>
+                      </div>
+                      <div class="list-rating__item-actions">
+                        <button class="btn btn--border">Chat</button>
+                        <button class="btn">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-rating__item-actions list-rating__item-actions--mobile">
+                    <button class="btn btn--border">Chat</button>
+                    <button class="btn">Follow</button>
+                  </div>
+                </div>
+                <div class="list-rating__item">
+                  <div class="list-rating__wrap">
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__avatar">
+                        <img src="./img/rating/rating-img.png" alt="avatar" class="list-rating__avatar-img">
+                        <div class="list-rating__avatar-info">
+                          <h5 class="list-rating__avatar-title">nickname</h5>
+                          <div class="list-rating__avatar-pos list-rating__text">tipsner</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-value">15 <img src="./img/rating/check.svg" alt="check"></div>
+                      <div class="list-rating__item-text list-rating__text">per month</div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-value">49 458<span>,34</span> <img src="./img/rating/heart-bold.svg"
+                          alt="check"></div>
+                      <div class="list-rating__item-text list-rating__text">portfolio</div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-wrap">
+                        <div class="list-rating__item-value">+ 57 289<span>,75 ₽</span></div>
+                        <div class="list-rating__item-text list-rating__text list-rating__text--green"><img
+                            src="./img/icons/arrow-up-stonks.svg" alt="arrow-up">239,83%</div>
+                      </div>
+                      <div class="list-rating__item-actions">
+                        <button class="btn btn--border">Chat</button>
+                        <button class="btn">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-rating__item-actions list-rating__item-actions--mobile">
+                    <button class="btn btn--border">Chat</button>
+                    <button class="btn">Follow</button>
+                  </div>
+                </div>
+                <div class="list-rating__item">
+                  <div class="list-rating__wrap">
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__avatar">
+                        <img src="./img/rating/rating-img.png" alt="avatar" class="list-rating__avatar-img">
+                        <div class="list-rating__avatar-info">
+                          <h5 class="list-rating__avatar-title">nickname</h5>
+                          <div class="list-rating__avatar-pos list-rating__text">tipsner</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-value">15 <img src="./img/rating/check.svg" alt="check"></div>
+                      <div class="list-rating__item-text list-rating__text">per month</div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-value">49 458<span>,34</span> <img src="./img/rating/heart-bold.svg"
+                          alt="check"></div>
+                      <div class="list-rating__item-text list-rating__text">portfolio</div>
+                    </div>
+                    <div class="list-rating__item-item">
+                      <div class="list-rating__item-wrap">
+                        <div class="list-rating__item-value">+ 57 289<span>,75 ₽</span></div>
+                        <div class="list-rating__item-text list-rating__text list-rating__text--green"><img
+                            src="./img/icons/arrow-up-stonks.svg" alt="arrow-up">239,83%</div>
+                      </div>
+                      <div class="list-rating__item-actions">
+                        <button class="btn btn--border">Chat</button>
+                        <button class="btn">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-rating__item-actions list-rating__item-actions--mobile">
+                    <button class="btn btn--border">Chat</button>
+                    <button class="btn">Follow</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <aside class="right-sidebar">
+          <div class="header-title">
+            <h3 class="header-title__title">Top 10 today</h3>
+            <button class="header-title__btn btn-small header-title__btn--mobile-on">
+              <span></span>
+            </button>
+            <button class="header-title__btn btn-small header-title__btn--right-sidebar">
+              <span></span>
+            </button>
+          </div>
+          <form class="right-sidebar__search right-sidebar__search--mt-0">
+            <input type="search" class="form__control form__control--search" placeholder="Search">
+            <button class="search btn-small" type="submit">
+              <span></span>
+            </button>
+          </form>
+          <ul class="right-sidebar__list list-team list-team--follow">
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#" class="list-team__person-avatar">N</a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">nickname</h5>
+                    </a>
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--dark btn--small">Follow</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#" class="list-team__person-avatar">N</a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">nickname</h5>
+                    </a>
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--dark btn--small">Follow</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#" class="list-team__person-avatar">N</a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">nickname</h5>
+                    </a>
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--dark btn--small">Follow</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#" class="list-team__person-avatar">N</a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">nickname</h5>
+                    </a>
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--dark btn--small">Follow</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#" class="list-team__person-avatar">N</a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">nickname</h5>
+                    </a>
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--dark btn--small">Follow</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#" class="list-team__person-avatar">N</a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">nickname</h5>
+                    </a>
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--dark btn--small">Follow</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#" class="list-team__person-avatar">N</a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">nickname</h5>
+                    </a>
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--dark btn--small">Follow</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#" class="list-team__person-avatar">N</a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">nickname</h5>
+                    </a>
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--dark btn--small">Follow</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#" class="list-team__person-avatar">N</a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">nickname</h5>
+                    </a>
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--dark btn--small">Follow</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#" class="list-team__person-avatar">N</a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">nickname</h5>
+                    </a>
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--dark btn--small">Follow</button>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay modal-overlay--sign-in">
+    <div class="modal" id="modal-sign_in">
+      <button class="modal__close"><img src="./img/icons/close-dark.svg" alt=""></button>
+      <div class="modal__content">
+        <img src="./img/icons/popup-hi.svg" alt="" class="modal__hi">
+        <div class="modal__title">Sign in</div>
+        <div class="modal__text">Enter your email and password to use all Tipsner functions.</div>
+        <form action="" class="form">
+          <div class="form__group">
+            <input type="email" class="form__control" placeholder="e-mail">
+          </div>
+          <div class="form__group form__group--password">
+            <input type="password" class="form__control form__control--pass" placeholder="password">
+            <button class="password-show" js-btn-password>
+              <span>
+              </span>
+            </button>
+          </div>
+          <a class="modal__forgot" href="#">Forgot password?</a>
+          <button class="form__btn" type="submit">Sign in</button>
+          <div class="form__footer">
+            <div class="form__social">
+              <a href="#" class="social-link">Vkontakte</a>
+              <a href="#" class="social-link">Facebook</a>
+              <a href="#" class="social-link">Instagram</a>
+            </div>
+            <div class="form__text">
+              i don't have an account.<a href="/profile.html">Sign up</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__left">
+      Copyright. Tipsner 2021. All rights reserved! Any use of materials is permitted only with the consent of the publisher.
+    </div>
+    <div class="footer__right">
+      <div class="footer__right-item">
+        Terms of Use
+      </div>
+      <div class="footer__right-item">
+        <a href="tel:84956485270" class="footer__phone">
+          <img src="./img/footer/phone.svg" alt="phone">
+            8 495 648 52 70
+        </a>
+        <a href="mailto:help@tipsner.com" class="footer__phone">
+          <img src="./img/footer/communications.svg" alt="email">
+            help@tipsner.com
+        </a>
+      </div>
+      <div class="footer__right-item">
+        <div class="footer__social">
+          <a href="#">
+            <img src="./img/footer/instagram.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./img/footer/linkedin.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./img/footer/telegram.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./img/footer/youtube.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://unpkg.com/swiper@6/swiper-bundle.min.js"></script>
+  <script src="js/vendors.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

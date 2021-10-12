@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="header-auth">
+  <div class="container">
+    <div class="header-auth__inner">
+      <div class="header-auth__info">
+        <div class="header-auth__info-item">
+          Balance: <span>0</span>
+        </div>
+        <div class="header-auth__info-item">
+          Wallet: <span>50 ₽</span>
+        </div>
+        <div class="header-auth__info-item">
+          <a href="#">Help</a>
+        </div>
+      </div>
+      <div class="header-auth__user">
+        <div class="header-auth__user-wrap-main">
+          <div class="header-auth__user-item" btn-user-show>
+            <div class="header-auth__user-wrap">
+              <img class="header-auth__avatar" src="./img/header-auth/avatar.png" alt="">
+            </div>
+          </div>
+          <div class="header-auth__user-item">
+            <div class="header-auth__cirlce-text">E</div>
+          </div>
+          <div class="header-auth__user-item">
+            <div class="header-auth__cirlce-text">12</div>
+          </div>
+          <div class="header-auth__user-item">
+            <button class="header-auth__user-btn btn--add">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="mobile-menu">
+    <button class="mobile-menu__close">
+      <span></span>
+    </button>
+    <nav class="sidebar__nav sidebar__nav--mobile">
+      <a href="profile.html" class="sidebar__nav-link">My profile</a>
+      <a href="news.html" class="sidebar__nav-link">News</a>
+      <a href="slots.html" class="sidebar__nav-link">Slots</a>
+      <a href="rating.html" class="sidebar__nav-link">Rating</a>
+    </nav>
+  </div>
+  <div class="mobile-menu__overlay"></div>
+  <div class="page">
+    <div class="container">
+      <div class="page__inner">
+        <aside class="sidebar">
+          <div class="sidebar__inner">
+            <div class="sidebar__header">
+              <button class="burger">
+                <span></span>
+              </button>
+              <a href="#" class="logo">
+                <img src="./img/sidebar/logo-text.svg" alt="">
+                <img src="./img/sidebar/logo-img.svg" alt="">
+              </a>
+            </div>
+            <nav class="sidebar__nav">
+              <a href="profile.html" class="sidebar__nav-link">My profile</a>
+              <a href="news.html" class="sidebar__nav-link">News</a>
+              <a href="slots.html" class="sidebar__nav-link">Slots</a>
+              <a href="rating.html" class="sidebar__nav-link">Rating</a>
+            </nav>
+          </div>
+        </aside>
+        <main class="main">
+          <div class="sell">
+            <div class="sell__header header-title">
+              <ul class="breadcrumb breadcrumb--not-divider">
+                <li class="breadcrumb-item"><a href="/buy.html">Buy</a></li>
+                <li class="breadcrumb-item active">Sell</li>
+              </ul>
+            </div>
+            <div class="sell__content">
+              <div class="sell__team team-slot team-slot--buy">
+                <div class="team-slot__img">
+                  <img src="./img/person-slot/ronaldo.png" alt="">
+                </div>
+                <div class="team-slot__content">
+                  <div class="team-slot__actions actions-team">
+                    <div class="actions-team__header">
+                      <div class="actions-team__header-followers followers">
+                        <div class="followers__item">
+                          <span>237m</span>
+                          Follows
+                        </div>
+                        <div class="followers__item">
+                          <span>123</span>
+                          Following
+                        </div>
+                      </div>
+                      <button class="btn-small btn-small--gray" js-btn-more>
+                        <ul class="more-body">
+                          <li class="more-body__item">
+                            Follow
+                          </li>
+                          <li class="more-body__item">
+                            Share link
+                          </li>
+                          <li class="more-body__item">
+                           It is you?
+                          </li>
+                          <li class="more-body__item">
+                           Write a complaint
+                          </li>
+                          <li class="danger more-body__item">
+                           Block account
+                          </li>
+                        </ul>
+                      </button>
+                    </div>
+                    <div class="actions-team__content">
+                      <div class="actions-team__content-item numbers-follow">
+                        <div class="numbers-follow__item">
+                          <div class="numbers-follow__value"><span>0</span> <div ><img src="./img/icons/heart-bold.svg" alt="heart"></div></div>
+                          <div class="numbers-follow__text">My tips</div>
+                        </div>
+                        <div class="numbers-follow__item">
+                          <div class="numbers-follow__value"><span>0</span> <div ><img src="./img/icons/heart-bold.svg" alt="heart"></div></div>
+                          <div class="numbers-follow__text">Rating</div>
+                        </div>
+                        <div class="numbers-follow__item">
+                          <div class="numbers-follow__value"><span>0</span></div>
+                          <div class="numbers-follow__text">Tipsners</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sell__empty notify-block empty-tips">
+                <div class="empty-tips__text notify-block__text">You have 0 tips available.</div>
+                <img src="./img/icons/warning.svg" alt="warn">
+              </div>
+              <section class="amount amount--sell">
+                <div class="amount__header">
+                  <h2 class="amount__title">Amount</h2>
+                  <div class="amount__text">Indicate how many ₽ you want to invest in this account.</div>
+                </div>
+                <form action="" class="form">
+                  <div class="form__group">
+                    <input type="text" class="form__control" placeholder="0" js-amount-input>
+                    <span class="icon"></span>
+                  </div>
+                  <div class="form__info">
+                    <div class="form__info-item">
+                      <div class="form__info-text">You’re exchanging</div>
+                      <div class="form__info-text">0 tips <span class="equal form__info-text--gray">≈</span> <span class="form__info-text--gray">0 ₽</span></div>
+                    </div>
+                    <div class="form__info-item">
+                      <div class="form__info-text">You receive </div>
+                      <div class="form__info-text">0 tips</div>
+                    </div>
+                  </div>
+                  <button disabled type="button" class="form__btn" js-amount-btn>Review</button>
+                </form>
+              </section>
+            </div>
+          </div>
+        </main>
+        <aside class="right-sidebar">
+          <div class="header-title">
+            <h3 class="header-title__title">Top 10 today</h3>
+            <button class="header-title__btn btn-small header-title__btn--mobile-on">
+              <span></span>
+            </button>
+            <button class="header-title__btn btn-small header-title__btn--right-sidebar">
+              <span></span>
+            </button>
+          </div>
+          <form class="right-sidebar__search right-sidebar__search--mt-0">
+            <input type="search" class="form__control form__control--search" placeholder="Search">
+            <button class="search btn-small" type="submit">
+              <span></span>
+            </button>
+          </form>
+          <ul class="right-sidebar__list list-team">
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+            <li class="list-team__person">
+              <div class="list-team__person-wrap">
+                <a href="#"><img src="./img/right-sidebar/person-1.png" alt="" class="list-team__person-img"></a>
+                <div class="list-team__person-info">
+                  <div class="list-team__person-header">
+                    <a href="#">
+                      <h5 class="list-team__person-name">hubulov</h5>
+                    </a>
+                    <img src="./img/icons/verification.svg" alt="">
+                  </div>
+                  <div class="list-team__person-text">
+                    <img src="./img/icons/arrow-up.svg" alt="">
+                    <span>63,83%</span>
+                    за месяц
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--green btn--small">Buy</button>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__left">
+      Copyright. Tipsner 2021. All rights reserved! Any use of materials is permitted only with the consent of the publisher.
+    </div>
+    <div class="footer__right">
+      <div class="footer__right-item">
+        Terms of Use
+      </div>
+      <div class="footer__right-item">
+        <a href="tel:84956485270" class="footer__phone">
+          <img src="./img/footer/phone.svg" alt="phone">
+            8 495 648 52 70
+        </a>
+        <a href="mailto:help@tipsner.com" class="footer__phone">
+          <img src="./img/footer/communications.svg" alt="email">
+            help@tipsner.com
+        </a>
+      </div>
+      <div class="footer__right-item">
+        <div class="footer__social">
+          <a href="#">
+            <img src="./img/footer/instagram.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./img/footer/linkedin.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./img/footer/telegram.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./img/footer/youtube.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://unpkg.com/swiper@6/swiper-bundle.min.js"></script>
+  <script src="js/vendors.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
